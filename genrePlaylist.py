@@ -6,7 +6,7 @@ SPOTIFY_SCOPE = "playlist-read-private playlist-modify-private playlist-modify-p
 
 def main():
     spotifyUser = input("Enter your spotify username: ")
-    genre = "dark jazz"
+    genre = input("Enter genre name: ")
     sp, newPl = spotifySetup(spotifyUser, genre)
     escapedGenre = "genre:" + genre
     #print(escapedGenre)
